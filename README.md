@@ -155,7 +155,7 @@ layouttest
 </android.support.constraint.ConstraintLayout>
 截图：
 
-https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%871.png
+![1](https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%871.png)
 
 ConstraintLayout布局
 使用ConstraintLayout实现如下界面:
@@ -255,7 +255,7 @@ ConstraintLayout布局
 </android.support.constraint.ConstraintLayout>
 截图：
 
-https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%872.png
+![2](https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%872.png)
 
 表格布局
 使用表格布局实现如下界面：
@@ -397,4 +397,4 @@ https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B
 </TableLayout>
 结果如下:
 
-https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%873.png
+![3](https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%873.png)
