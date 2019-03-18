@@ -12,17 +12,8 @@ layouttest
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:id="@+id/next1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
@@ -31,7 +22,7 @@ layouttest
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
            <TableRow>
-     <Button
+       <Button
          android:layout_width="0dp"
          android:layout_height="wrap_content"
          android:id="@+id/btn_one"
@@ -150,7 +141,7 @@ layouttest
                    android:text="four,four"/>
            </TableRow>
        </TableLayout>
-   </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
 截图：
@@ -159,10 +150,11 @@ layouttest
 
 ConstraintLayout布局
 使用ConstraintLayout实现如下界面:
-
+```
 代码如下：
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <?xml version="1.0" encoding="utf-8"?>
+  <android.support.constraint.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -180,7 +172,7 @@ ConstraintLayout布局
         android:text="RED"
         android:textColor="#000000"
         android:gravity="center"
-        />
+      />
     <TextView
         android:id="@+id/test2_text2"
         android:layout_width="100dp"
@@ -203,7 +195,7 @@ ConstraintLayout布局
         android:text="YELLOW"
         android:gravity="center"
         />
-     <TextView
+    <TextView
          android:id="@+id/test2_text4"
          android:layout_width="70dp"
          android:layout_height="70dp"
@@ -213,7 +205,7 @@ ConstraintLayout布局
          android:text="BLUE"
          android:gravity="center"
          />
-      <TextView
+   <TextView
           android:id="@+id/test2_text5"
           android:layout_width="70dp"
           android:layout_height="70dp"
@@ -223,7 +215,7 @@ ConstraintLayout布局
           android:text="GREEN"
           android:gravity="center"
           />
-    <TextView
+   <TextView
         android:id="@+id/test2_text6"
         android:layout_width="70dp"
         android:layout_height="70dp"
@@ -233,7 +225,7 @@ ConstraintLayout布局
         android:text="INDIGO"
         android:gravity="center"
         />
-    <TextView
+   <TextView
         android:id="@+id/test2_text7"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -241,8 +233,9 @@ ConstraintLayout布局
         app:layout_constraintCircleAngle="180"
         app:layout_constraintCircleRadius="90dp"
         android:text="VIOLET"
-        android:gravity="center"/>
-     <Button
+        android:gravity="center"
+        />
+   <Button
          android:id="@+id/but1"
          android:layout_width="70dp"
          android:layout_height="40dp"
@@ -251,8 +244,8 @@ ConstraintLayout布局
          app:layout_constraintCircleRadius="90dp"
          android:text="NEXT"
          />
-
-</android.support.constraint.ConstraintLayout>
+  </android.support.constraint.ConstraintLayout>
+  ```
 截图：
 
 ![2](https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%872.png)
