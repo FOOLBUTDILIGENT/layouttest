@@ -1,0 +1,400 @@
+# layouttest
+layouttest
+线性布局
+使用线性布局实现如下界面：
+
+代码：
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/next1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TableRow>
+     <Button
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/btn_one"
+         android:layout_weight="1"
+         android:textSize="10dp"
+         android:text="one,one"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_two"
+           android:layout_weight="1"
+           android:textSize="10dp"
+           android:text="one,two"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_three"
+           android:layout_weight="1"
+           android:textSize="10dp"
+           android:text="one,three"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_four"
+           android:layout_weight="1"
+           android:textSize="10dp"
+           android:text="one,four"/></TableRow>
+           <TableRow>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_5"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="two,one"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_6"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="two,two"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_7"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="two,three"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_8"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="two,four"/>
+           </TableRow>
+           <TableRow>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_9"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="three,one"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_10"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="three,two"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_11"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="three,three"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_12"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="three,four"/>
+           </TableRow>
+           <TableRow>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_13"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="four,one"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_14"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="four,two"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_15"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="four,three"/>
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btn_16"
+                   android:layout_weight="1"
+                   android:textSize="10dp"
+                   android:text="four,four"/>
+           </TableRow>
+       </TableLayout>
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+截图：
+
+https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%871.png
+
+ConstraintLayout布局
+使用ConstraintLayout实现如下界面:
+
+代码如下：
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Main2Activity">
+    <TextView
+        android:id="@+id/test2_text1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="RED"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/test2_text2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintLeft_toLeftOf="@+id/test2_text1"
+        android:text="ORANGE"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/test2_text3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="YELLOW"
+        android:gravity="center"
+        />
+     <TextView
+         android:id="@+id/test2_text4"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         app:layout_constraintCircle="@id/test2_text2"
+         app:layout_constraintCircleAngle="180"
+         app:layout_constraintCircleRadius="100dp"
+         android:text="BLUE"
+         android:gravity="center"
+         />
+      <TextView
+          android:id="@+id/test2_text5"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          app:layout_constraintCircle="@id/test2_text4"
+          app:layout_constraintCircleAngle="270"
+          app:layout_constraintCircleRadius="90dp"
+          android:text="GREEN"
+          android:gravity="center"
+          />
+    <TextView
+        android:id="@+id/test2_text6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/test2_text4"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="90dp"
+        android:text="INDIGO"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/test2_text7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintCircle="@id/test2_text4"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="90dp"
+        android:text="VIOLET"
+        android:gravity="center"/>
+     <Button
+         android:id="@+id/but1"
+         android:layout_width="70dp"
+         android:layout_height="40dp"
+         app:layout_constraintCircle="@id/test2_text7"
+         app:layout_constraintCircleAngle="180"
+         app:layout_constraintCircleRadius="90dp"
+         android:text="NEXT"
+         />
+
+</android.support.constraint.ConstraintLayout>
+截图：
+
+https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%872.png
+
+表格布局
+使用表格布局实现如下界面：
+
+代码:
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:stretchColumns="0"
+    tools:context=".Main3Activity">
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text=" Open...                                                 Ctrl+O"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+
+            />
+    </TableRow
+        >
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text=" Save...                                                  Ctrl+S"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:textSize="20dp"
+            android:text=" Save as...                                  Ctrl+Shift+S"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/ow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#FFFFFF"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text="X Import...                                           "
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/row6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text="X Export...                                            Ctrl+E"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/row7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#FFFFFF"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/row8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text="Quiet...                                                                    "
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </TableRow>
+</TableLayout>
+结果如下:
+
+https://raw.githubusercontent.com/FOOLBUTDILIGENT/images/master/layoutest/%E5%9B%BE%E7%89%873.png
